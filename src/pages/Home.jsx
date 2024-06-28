@@ -1,12 +1,13 @@
-import Cardmain from '../components/card'
 
+import Carrusel from '../components/Carrusel';
+import "../css/App.css"
 function Home() {
     return (
       <div>
-        <Cardmain />
-        <h1>¡Bienvenido! 
+    
+        <h1 className='elegant-tex'>¡Bienvenido! 
         <h3>
-            
+          <Carrusel/>
         </h3>
         </h1>
       </div>
