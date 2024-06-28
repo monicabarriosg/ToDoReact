@@ -7,15 +7,19 @@ import Contact from "./components/contact";
 import Footer from "./components/Footer";
 
 
+
+
 function App() {
   return (
     <Router>
       <Navbar /> 
       <Routes>
+       
         <Route path='/register' element={<PaggRegister />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path="/contact" element ={<Contact/>} />
+     
       </Routes>
       <Footer/>
     </Router>

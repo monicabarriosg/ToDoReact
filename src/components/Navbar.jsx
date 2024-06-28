@@ -28,6 +28,11 @@ const Navbar = () => {
               Necesito ayuda
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to= "/home" className="nav-links">
+              home
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

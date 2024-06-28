@@ -47,7 +47,7 @@ function Formulariologin() {
       <button id='boton' className="button ">
         <Link to='/register'>Ir a Register</Link>
       </button>
-      <h1></h1>
+  
     </div>
   );
 }
