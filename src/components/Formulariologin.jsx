@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import "../css/login.css"
 
 
 function Formulariologin() {
@@ -38,12 +39,12 @@ function Formulariologin() {
     }
   };
   return (
-    <div>
-      <h1>Login</h1>
-      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)}/>
-      <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)}/>
-      <button id='boton' onClick={getdatos}>Login</button>
-      <button id='boton'>
+    <div className="container">
+      <h1>Crear cuenta</h1>
+      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)} className="myInput"/>
+      <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)} className="myInput"/>
+      <button id='boton' onClick={getdatos} className="button">Login</button>
+      <button id='boton' className="button ">
         <Link to='/register'>Ir a Register</Link>
       </button>
       <h1></h1>
