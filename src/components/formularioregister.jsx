@@ -24,12 +24,12 @@ function FormularioRegistro() {
   };
 
   return (
-    <div>
-      <h1>REGISTRAR</h1>
-      <input id='user' name="myInput" placeholder='Ingrese nombre' value={user} onChange={e => setUser(e.target.value)} />
-      <input id='contrasena' name="myInput" placeholder='Ingrese contraseña' type="password" value={contrasena} onChange={e => setContrasena(e.target.value)} />
-      <button id='boton' onClick={postdatos}>Registro</button>
-      <button id='boton'>
+    <div className="container">
+      <h1>Registro</h1>
+      <input id='user' name="myInput" placeholder='Ingrese nombre' value={user} onChange={e => setUser(e.target.value)} className="myInput" />
+      <input id='contrasena' name="myInput" placeholder='Ingrese contraseña' type="password" value={contrasena} onChange={e => setContrasena(e.target.value)}className="myInput"  />
+      <button id='boton' onClick={postdatos} className="button">Registro</button>
+      <button id='boton' className="button">
         <Link to='/login'>Ir al Login</Link>
       </button>
       <h1></h1>

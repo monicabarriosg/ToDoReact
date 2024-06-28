@@ -1,0 +1,46 @@
+
+.navbar {
+    background-color: #f7d9e8; /* Color de fondo rosado */
+    padding: 10px 0;  
+    border-bottom: 2px solid #f2a7c4; /* Borde inferior rosado más oscuro */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: #c74d84; /* Color del texto del logo */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-links {
+    color: #c74d84; /* Color del texto de los enlaces */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    background-color: #f2a7c4; /* Cambio de color al pasar el mouse */
+    color: #fff;
+  }
+  
+  

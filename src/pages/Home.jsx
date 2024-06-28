@@ -1,7 +1,14 @@
+import Cardmain from '../components/card'
+
 function Home() {
     return (
       <div>
-        <h1>¡Bienvenido! feo.</h1>
+        <Cardmain />
+        <h1>¡Bienvenido! 
+        <h3>
+            
+        </h3>
+        </h1>
       </div>
     );
   }
