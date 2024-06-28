@@ -1,15 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Register from "./pages/Register";
+import PaggRegister from "./pages/PaggRegister"
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Navbar from './components/Navbar';
+import Contact from "./components/contact";
+
 
 function App() {
   return (
     <Router>
+      <Navbar /> 
       <Routes>
-        <Route path='/register' element={<Register />} />
+        <Route path='/register' element={<PaggRegister />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Home />} />
+        <Route path="/contact" element ={<Contact/>} />
       </Routes>
     </Router>
   );
