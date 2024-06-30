@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import "../css/App.css"
 
 function carrusel() {
   return (
@@ -7,7 +8,8 @@ function carrusel() {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100"
+        id='uno'
+          className="d-block w-100 custom-img"
           src="https://static.bershka.net/4/static/images/home/2024/slidesHTML/_sales-ss/assets/launch_first-stage_man_D.jpg?20240628101700"
           alt="First slide"
         />
@@ -18,8 +20,9 @@ function carrusel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://img2.rtve.es/i/?w=1600&i=1474205948441.jpg"
+        id='dos'
+          className="d-block w-100 custom-img"
+          src="https://media.gucci.com/content/HeroRegularStandard_1600x675/1717749049/HeroRegularStandard_Gucci-Men-May24-1622-GUC-047-0019-G-v4_001_Default.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -29,15 +32,40 @@ function carrusel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://static.wixstatic.com/media/e6e6d1_ee478d74ae5d473d83d2cf8a1ba0a553~mv2.jpg/v1/fill/w_1110,h_740,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e6e6d1_ee478d74ae5d473d83d2cf8a1ba0a553~mv2.jpg " 
+        id='tres'
+          className="d-block w-100 custom-img"
+          src="https://media.gucci.com/content/HeroRegularStandard_1600x675/1713514521/HeroRegularStandard_Gucci-Lido-Apr24-ASE-240207-0009-6403_001_Default.jpg" 
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
+          <h5></h5>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+       
           </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+        id='uno'
+          className="d-block w-100 custom-img"
+          src="https://media.gucci.com/content/HeroRegularStandard_1600x675/1713514527/HeroRegularStandard_Gucci-Lido-Apr24-ASE-240214-0017-4747_001_Default.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5>HI STYLE</h5>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+        id='uno'
+          className="d-block w-100 custom-img"
+          src="https://media.gucci.com/content/HeroRegularStandard_1600x675/1717416106/HeroRegularStandard_Gucci-KIDS-FW24-May24-240327-LB11-133_001_Default.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5>HI STYLE</h5>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
