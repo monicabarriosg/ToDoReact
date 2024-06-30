@@ -1,5 +1,7 @@
 
+
 import Carrusel from '../components/Carrusel';
+import Cardm from '../components/Cardm';
 import "../css/App.css"
 function Home() {
     return (
@@ -9,6 +11,7 @@ function Home() {
         <h3>
           <Carrusel/>
         </h3>
+       <Cardm/>
         </h1>
       </div>
     );
