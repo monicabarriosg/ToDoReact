@@ -1,3 +1,4 @@
+// este componente es la barra de navegacion para que el usario pueda 
 import { Link } from 'react-router-dom';
 import "../css/nav.css"
 
@@ -25,12 +26,17 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to= "/contact" className="nav-links">
-              Necesito ayuda
+              contact
             </Link>
           </li>
           <li className="nav-item">
             <Link to= "/home" className="nav-links">
               home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to= "/zonaAyuda" className="nav-links">
+              Preguntas frecuentes
             </Link>
           </li>
         </ul>

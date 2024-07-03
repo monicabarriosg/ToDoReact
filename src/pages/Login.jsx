@@ -1,14 +1,12 @@
-import Formulariologin from "../components/Formulariologin"
+// importacion del componente que tiene el formulario del login
+import Formulariologin from "../components/Formulariologin";
+
 function Login() {
   return (
     <div>
-    <Formulariologin/>
+      {/* componente que tiene el login */}
+      <Formulariologin />
     </div>
-  )
+  );
 }
-export default Login
-
-
-
-
-
+export default Login;

@@ -1,12 +1,16 @@
+// import del useState y useEffect para los cambios de las variables 
 import { useState, useEffect } from "react";
+
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+// funcion para declarar los cambios en las variables 
 function Formulariologin() {
   const [user, setUser] = useState("");
   const [contrasena, setContrasena] = useState("");
   const [datos, setDatos] = useState([]);
   const [,setUserFound] = useState(false);
   const navigate = useNavigate();
+  
   useEffect(() => {
     axios.get("http://localhost:3001/user")
       .then(response => {
