@@ -4,9 +4,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Navbar from './components/Navbar';
 import Contact from "./components/contact";
-import Footer from "./components/Footer";
-
-
+import ProductosMujer from "./pages/ProductosMujer"
 
 
 function App() {
@@ -14,14 +12,14 @@ function App() {
     <Router>
       <Navbar /> 
       <Routes>
-       
+   
         <Route path='/register' element={<PaggRegister />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path="/contact" element ={<Contact/>} />
-     
+        <Route path='/ProductosMujer' element={<ProductosMujer />} />
       </Routes>
-      <Footer/>
+
     </Router>
   );
 }

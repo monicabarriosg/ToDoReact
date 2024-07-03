@@ -1,4 +1,4 @@
-
+// este componente es para crear el pie de pagina
 const Footer = () => {
     return (
       <footer className="footer">

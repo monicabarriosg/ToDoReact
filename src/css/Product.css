@@ -1,0 +1,36 @@
+/* Estilos para el formulario de Crear Nuevo Pedido */
+.container-createPedido {
+    background-color: #f2e6ff; /* Fondo lila */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+  }
+  
+  .h2-createPedido {
+    color: #6a0dad; /* Color de texto lila oscuro */
+    margin-bottom: 20px;
+  }
+  
+  .input-createPedido {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #6a0dad; /* Borde lila */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .button-createPedido {
+    background-color: #6a0dad; /* Fondo lila oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .button-createPedido:hover {
+    background-color: #4b0780; /* Color más oscuro al hacer hover */
+  }
+  
