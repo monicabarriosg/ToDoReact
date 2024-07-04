@@ -1,3 +1,5 @@
+import Mostrar from "../components/mostrar"
+
 import Footer from "../components/Footer";
 {
   /* importacion del componente que tiene el pie de pagina */
@@ -26,6 +28,8 @@ import CreatePedido from "../components/CreatePedido";
 {
   /* importacion del componente que tiene el POST */
 }
+
+
 function Home() {
   return (
     <div>
@@ -40,6 +44,7 @@ function Home() {
         <VideoCard
           videoUrl="https://static.bershka.net/4/photos2/2024/I/0/1/p/6250/033/251//01/6250033251_4_3_1.mp4?t=1718274273045"
           title="nueva coleccion"
+          className="video-uno"
         />
         <h1>
           {/* card sobre un producto */}
@@ -58,8 +63,11 @@ function Home() {
           title="nueva coleccion"
         />
       </h1>
+      <Mostrar/>
       <ListPedidos />
       <CreatePedido />
+      <subirProductos/>
+   
       <Footer />
     </div>
   );

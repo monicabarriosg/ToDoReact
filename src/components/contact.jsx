@@ -6,6 +6,7 @@ import "../css/ContactForm.css";
 // esta funcion es para declarar las variables y recopilar los datos que se requieren del usario
 function Contact() {
   const [formData, setFormData] = useState({
+    
     name: "",
     email: "",
     message: "",

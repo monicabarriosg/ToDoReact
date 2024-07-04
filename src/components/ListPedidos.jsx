@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import EliminarPedido from './eliminarProducto';
@@ -24,13 +23,13 @@ const ListPedidos = () => {
   };
 
   return (
-    <div className='container'>
-      <h2 className='h2-tittle'>Listado de Pedidos</h2>
-      <ul className='list-product'>
+    <div className='container-listPedidos'>
+      <h2 className='h2-listPedidos'>Listado de Pedidos</h2>
+      <ul className='ul-product'>
         {pedidos.map((pedido) => (
-          <li key={pedido._id}>
-            <strong>Producto:</strong> {pedido.producto} - <strong>Cantidad:</strong> {pedido.cantidad} - <strong>Cliente:</strong> {pedido.cliente}
-            <EliminarPedido pedidoId={pedido._id} onPedidoEliminado={handlePedidoEliminado}/>
+          <li key={pedido._id} className='li-listPedidos'>
+            <strong className='producto-listPedidos'>Producto:</strong> {pedido.producto} - <strong className='cantidad-listPedidos'>Cantidad:</strong> {pedido.cantidad} - <strong className='cliente-listPedidos'>Cliente:</strong> {pedido.cliente}
+            <EliminarPedido pedidoId={pedido._id} onPedidoEliminado={handlePedidoEliminado} className="btnEliminar-listPedidos"/>
           </li>
         ))}
       </ul>
