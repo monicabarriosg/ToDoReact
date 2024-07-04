@@ -8,6 +8,7 @@ const CreatePedido = () => {
     cantidad: 1,
     cliente: '',
     direccionEnvio: '',
+ 
   });
 
   const handleChange = (e) => {

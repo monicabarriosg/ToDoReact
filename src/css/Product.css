@@ -1,36 +1,124 @@
-/* Estilos para el formulario de Crear Nuevo Pedido */
+
 .container-createPedido {
-    background-color: #f2e6ff; /* Fondo lila */
+    background-color: #f2e6ff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-top: 50px;
   }
   
   .h2-createPedido {
-    color: #6a0dad; /* Color de texto lila oscuro */
+    color: #6a0dad;
     margin-bottom: 20px;
   }
   
   .input-createPedido {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #6a0dad; /* Borde lila */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6a0dad;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
   }
   
   .button-createPedido {
-    background-color: #6a0dad; /* Fondo lila oscuro */
+    background-color: #6a0dad;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 16px; /* Tamaño de fuente para dispositivos móviles */
+    width: 100%; /* Botón ocupa el ancho completo del contenedor */
   }
   
   .button-createPedido:hover {
-    background-color: #4b0780; /* Color más oscuro al hacer hover */
+    background-color: #4b0780;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .container-createPedido {
+      padding: 15px;
+    }
+  
+    .input-createPedido,
+    .button-createPedido {
+      font-size: 14px;
+    }
+  }
+
+
+
+  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* estilos para la lista de productos  */
+  /* styles.css */
+
+.container-listPedidos {
+  background-color: #f2e6ff; /* Fondo lila claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px; 
+  margin: 0 auto; 
+  margin-top: 90px;
+}
+
+.h2-listPedidos {
+  color: #6a0dad; /* Color de texto lila oscuro */
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.ul-product {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.li-listPedidos {
+  background-color: white; /* Fondo blanco para los elementos de la lista */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto-listPedidos,
+.cantidad-listPedidos,
+.cliente-listPedidos {
+  color: #6a0dad; /* Color de texto lila oscuro */
+}
+
+.btnEliminar-listPedidos {
+  background-color: #6a0dad; /* Fondo lila oscuro */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  float: right; /* Alinear el botón a la derecha */
+}
+
+.btnEliminar-listPedidos:hover {
+  background-color: #4b0780; /* Color más oscuro al hacer hover */
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-listPedidos {
+    padding: 15px;
+  }
+
+  .li-listPedidos {
+    padding: 10px;
+  }
+
+  .btnEliminar-listPedidos {
+    padding: 6px 12px;
+  }
+}

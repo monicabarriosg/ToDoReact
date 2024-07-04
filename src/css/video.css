@@ -1,4 +1,16 @@
+/* estilos para los videos de la pagina de home */
 .card-video{
-    justify-content: center;
+justify-content: center;
 
 }
+
+@media screen and (max-width: 768px) {
+    .card-video{
+      padding: 15px;
+    }
+     .card-title
+    .card-body
+    .card-video {
+      font-size: 14px;
+    }
+  }

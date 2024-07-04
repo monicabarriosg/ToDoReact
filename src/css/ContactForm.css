@@ -1,4 +1,4 @@
-
+/* estilos para la pagina de "contact me" */
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
@@ -22,7 +22,7 @@
     margin-bottom: 8px;
     color: #6a0dad;
   }
-  
+  /* estilos del input */
   .contact-form input[type="text"],
   .contact-form input[type="email"],
   .contact-form textarea {
@@ -38,7 +38,7 @@
     resize: vertical;
     height: 120px;
   }
-  
+  /* estilos del boton de contacto */
   .contact-form button[type="submit"] {
     background-color: #ae6fda;
     color: white;

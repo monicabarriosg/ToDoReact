@@ -18,7 +18,7 @@ function carrusel() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h5>HI STYLE</h5>
+            <h5>Dile hola al estilo</h5>
             <p></p>
           </Carousel.Caption>
         </Carousel.Item>

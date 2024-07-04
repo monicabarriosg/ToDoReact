@@ -15,22 +15,24 @@ function cardHome() {
   }
 
   return (
-    <Card style={{ width: "18rem" }} className="card" >
+    <Card style={{ width: "20rem" }} className="card-1">
       {/* card numero 1 */}
+      
       <Card.Img
         variant="top"
         className="card-1"
         src="https://static.bershka.net/4/photos2/2024/I/0/1/p/7804/033/251/94b5d18629d1a122c77329303c534f3a-7804033251_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
       />
-      <Card.Body >
+      <Card.Body>
         <Card.Title> mujer</Card.Title>
-        <Card.Text>sssssss</Card.Text>
+        <Card.Text></Card.Text>
         <Button variant="primary" onClick={navegar} href="productosMujer">ver</Button>
       </Card.Body>
       {/* card numero 2 */}
       <Card.Img
+      style={{ width: '20rem' }} className="card-2"
         variant="top"
-        className="card-2"
+       
         src="https://static.bershka.net/4/photos2/2024/I/0/2/p/7999/443/800//13/f1aca70fcfbb889d542885d7084afd0e-7999443800_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
       />
       <Card.Body>

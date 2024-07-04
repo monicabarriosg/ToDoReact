@@ -1,8 +1,8 @@
-
+/* estilos para el nav */
 .navbar {
-    background-color: #f7d9e8; /* Color de fondo rosado */
+    background-color: #ffffff; /* Color de fondo rosado */
     padding: 10px 0;  
-    border-bottom: 2px solid #f2a7c4; /* Borde inferior rosado más oscuro */
+    border-bottom: 2px solid #f7c3d9; /* Borde inferior rosado más oscuro */
   }
   
   .navbar-container {
@@ -12,10 +12,11 @@
   }
   
   .navbar-logo {
-    color: #c74d84; /* Color del texto del logo */
-    font-size: 24px;
+    color: #eae6d1; 
+    font-size: 4px;
     font-weight: bold;
     text-decoration: none;
+    height: 50px;
   }
   
   .nav-menu {
