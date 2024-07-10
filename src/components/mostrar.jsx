@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useFetchPost } from './SubirProductos'; // Asegúrate de importar correctamente desde tu archivo useFetch.js
+import { useState } from "react";
+import { useFetchPost } from "./SubirProductos"; // Asegúrate de importar correctamente desde tu archivo useFetch.js
 
 const MostrarProductos = ({ onProductAdded }) => {
   const [productoData, setProductoData] = useState({
-    nombre: '',
-    descripcion: '',
+    nombre: "",
+    descripcion: "",
     precio: 0,
   });
 
@@ -21,15 +21,15 @@ const MostrarProductos = ({ onProductAdded }) => {
       const response = await post("http://localhost:3001/user", productoData);
       if (response) {
         onProductAdded(response); // Llama a la función para actualizar el estado de productos
-        console.log('Producto creado:', response);
-        alert('Producto creado exitosamente');
-        setProductoData({ nombre: '', descripcion: '', precio: 0 }); // Reinicia el formulario
+        console.log("Producto creado:", response);
+        alert("Producto creado exitosamente");
+        setProductoData({ nombre: "", descripcion: "", precio: 0 }); // Reinicia el formulario
       } else {
-        alert('Error al crear producto');
+        alert("Error al crear producto");
       }
     } catch (error) {
-      console.error('Error al crear producto:', error);
-      alert('Error al crear producto');
+      console.error("Error al crear producto:", error);
+      alert("Error al crear producto");
     }
   };
 
@@ -72,7 +72,7 @@ const MostrarProductos = ({ onProductAdded }) => {
           />
         </div>
         <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Cargando...' : 'Agregar Producto'}
+          {isLoading ? "Cargando..." : "Agregar Producto"}
         </button>
       </form>
       {error && <p>Error: {error}</p>}

@@ -1,4 +1,7 @@
-import Mostrar from "../components/mostrar"
+import Mostrar from "../components/mostrar";
+import EliminaProducto from "../components/EliminaProducto";
+import VerProductos from "../components/VerProductos";
+import CrearProducto from "../components/CrearProducto";
 
 import Footer from "../components/Footer";
 {
@@ -28,7 +31,6 @@ import CreatePedido from "../components/CreatePedido";
 {
   /* importacion del componente que tiene el POST */
 }
-
 
 function Home() {
   return (
@@ -63,11 +65,15 @@ function Home() {
           title="nueva coleccion"
         />
       </h1>
-      <Mostrar/>
+      <EliminaProducto />
+      <VerProductos />
+      <CrearProducto />
+
+      <Mostrar />
       <ListPedidos />
       <CreatePedido />
-      <subirProductos/>
-   
+      <subirProductos />
+
       <Footer />
     </div>
   );

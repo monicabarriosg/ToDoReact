@@ -1,12 +1,11 @@
 // este componente es un formulario donde el usuario puede dejar quejas, dudas o cualquier mensaje que desee
 // importacion del useState
-import React, { useState } from "react";
+import { useState } from "react";
 // importacion de la hoja de estilos
 import "../css/ContactForm.css";
 // esta funcion es para declarar las variables y recopilar los datos que se requieren del usario
 function Contact() {
   const [formData, setFormData] = useState({
-    
     name: "",
     email: "",
     message: "",

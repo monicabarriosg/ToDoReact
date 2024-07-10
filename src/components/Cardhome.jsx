@@ -15,9 +15,9 @@ function cardHome() {
   }
 
   return (
-    <Card style={{ width: "20rem" }} className="card-1">
+    <Card style={{ width: "20rem" }} className="card-madre">
       {/* card numero 1 */}
-      
+
       <Card.Img
         variant="top"
         className="card-1"
@@ -26,19 +26,23 @@ function cardHome() {
       <Card.Body>
         <Card.Title> mujer</Card.Title>
         <Card.Text></Card.Text>
-        <Button variant="primary" onClick={navegar} href="productosMujer">ver</Button>
+        <Button variant="primary" onClick={navegar} href="productosMujer">
+          ver
+        </Button>
       </Card.Body>
       {/* card numero 2 */}
       <Card.Img
-      style={{ width: '20rem' }} className="card-2"
+        style={{ width: "20rem" }}
+        className="card-2"
         variant="top"
-       
         src="https://static.bershka.net/4/photos2/2024/I/0/2/p/7999/443/800//13/f1aca70fcfbb889d542885d7084afd0e-7999443800_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
       />
       <Card.Body>
         <Card.Title>hombres</Card.Title>
         <Card.Text></Card.Text>
-        <Button variant="primary" onClick={navegar} href="productosMujer">ver</Button>
+        <Button variant="primary" onClick={navegar} href="productosMujer">
+          ver
+        </Button>
       </Card.Body>
       {/*card numero 3  */}
       <Card.Img
