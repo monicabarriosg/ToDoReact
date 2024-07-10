@@ -1,6 +1,9 @@
 /* estilos para los videos de la pagina de home */
 .card-video{
 justify-content: center;
+width: 400px; /* Ancho deseado para el contenedor del video */
+margin: 20px; /* Margen exterior para separar los videos */
+margin-left: 400px;
 
 }
 
@@ -14,3 +17,9 @@ justify-content: center;
       font-size: 14px;
     }
   }
+
+  .video-player {
+    width: 110%; 
+    height: auto;
+  }
+  

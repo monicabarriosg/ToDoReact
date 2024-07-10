@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useFetchPost = () => {
   const [isLoading, setIsLoading] = useState(false); // Estado para indicar si la solicitud está en curso
@@ -10,15 +10,15 @@ export const useFetchPost = () => {
 
     try {
       const response = await fetch(url, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(body), // Convertimos el cuerpo a JSON
       });
 
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
 
       const data = await response.json(); // Convertimos la respuesta a JSON

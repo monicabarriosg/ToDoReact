@@ -23,8 +23,8 @@
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #f9ebfb;
+    border: 1px solid #f4ebf2;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
@@ -36,16 +36,24 @@
   .pregunta-item-answer {
     padding: 10px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #f7e7f4;
     border-radius: 5px;
     display: none;
   }
   
   .pregunta-item-toggle:checked + .pregunta-item-question {
-    background-color: #e0e0e0;
+  background-color: #f9ebfb;
   }
   
   .pregunta-item-toggle:checked + .pregunta-item-question + .pregunta-item-answer {
     display: block;
   }
+  .pregunta-item-answer {
+    /* Estilos para las respuestas */
+    color: #9f979f; /* Color lila para el texto de respuesta */
+  }
   
+  /* Estilos para el color rosa */
+  .pregunta-item-answer-pink {
+    color: #fdabb8; /* Color rosa */
+  }

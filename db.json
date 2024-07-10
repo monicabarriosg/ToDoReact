@@ -1,102 +1,18 @@
 {
   "user": [
     {
-      "id": "30b0"
+      "id": "2464",
+      "name": "Cazadora ligera capucha",
+      "price": "15",
+      "description": "Talla y altura modelo: L · 190 cm",
+      "imageUrl": "https://static.bershka.net/4/photos2/2024/V/0/2/p/1777/718/800/90efe66fed4c819e40eb676d8b8f93b7-1777718800_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
     },
     {
-      "id": "fd57",
-      "nombre": "moni",
-      "contrasena": "123456"
-    },
-    {
-      "id": "2465",
-      "producto": "moni",
-      "cantidad": "3",
-      "cliente": "111",
-      "direccionEnvio": "www"
-    },
-    {
-      "id": "b9b9",
-      "producto": "mmmm",
-      "cantidad": 1,
-      "cliente": "111",
-      "direccionEnvio": "qqqqqqqqqqqq"
-    },
-    {
-      "id": "9c0f",
-      "producto": "victoria",
-      "cantidad": "2",
-      "cliente": "1",
-      "direccionEnvio": "mi casa"
-    },
-    {
-      "id": "7ee7",
-      "producto": "m",
-      "cantidad": 1,
-      "cliente": "sssss",
-      "direccionEnvio": "sssss"
-    },
-    {
-      "id": "d776",
-      "producto": "sssssssss",
-      "cantidad": 1,
-      "cliente": "ssssssssssss",
-      "direccionEnvio": "ssssssssss"
-    },
-    {
-      "id": "ca14",
-      "producto": "sssssssssssss",
-      "cantidad": 1,
-      "cliente": "ssss",
-      "direccionEnvio": "ms"
-    },
-    {
-      "id": "d8f1",
-      "producto": "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
-      "cantidad": 1,
-      "cliente": "sssssssss",
-      "direccionEnvio": "sssssssssssss"
-    },
-    {
-      "id": "d0a7",
-      "producto": "camisa ",
-      "cantidad": "4",
-      "cliente": "monica",
-      "direccionEnvio": "mi casa"
-    },
-    {
-      "id": "ea8a",
-      "producto": "camisa rosa",
-      "cantidad": "3",
-      "cliente": "alexia",
-      "direccionEnvio": "mi casa"
-    },
-    {
-      "id": "4f3c",
-      "nombre": "mmm",
-      "descripcion": "aaaaaaaaaaa",
-      "precio": "0.41"
-    },
-    {
-      "id": "9ec4",
-      "nombre": "mmm",
-      "descripcion": "aaaaaaaaaaa",
-      "precio": "0.41"
-    },
-    {
-      "id": "711a",
-      "nombre": "barry",
-      "contrasena": "1234"
-    },
-    {
-      "id": "ae1d",
-      "nombre": "barry",
-      "contrasena": "1234"
-    },
-    {
-      "id": "d6de",
-      "nombre": "barry",
-      "contrasena": "1234"
+      "id": "effb",
+      "name": "Camiseta Cars manga corta print",
+      "price": "25",
+      "description": "Talla y altura modelo: P · 177 cm",
+      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/7592/167/600//04/a92cf3733b39f699e5d0bb0d17021126-7592167600_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
     }
   ]
 }

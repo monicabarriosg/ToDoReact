@@ -1,5 +1,6 @@
+// importacion del componente de preguntas frecuentes
 import PreguntaFrecuente from "../components/preguntaFrecuente";
-import mostrarProductos from "../components/mostrar"
+// funcion para agregar el componente
 function preguntas() {
     <h1>
         <PreguntaFrecuente/>
