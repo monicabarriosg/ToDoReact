@@ -1,8 +1,12 @@
+
 import { useState, useEffect } from "react";
-import { getData, deleteData } from "../use";
+import { getData } from "../use";
 import "../css/ProductosCards.css";
+import Filtro from "../components/Filtro"; // Importa el componente de filtro
+
 function ProductList() {
   const [products, setProducts] = useState([]);
+  const [filtro, setFiltro] = useState(""); // Estado para el término de búsqueda
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -17,24 +21,19 @@ function ProductList() {
     fetchProducts();
   }, []);
 
-  const handleDelete = async (id) => {
-    try {
-      const response = await deleteData("http://localhost:3001/user", id);
-      console.log("Product deleted:", response);
-
-      // Actualizar la lista de productos después de eliminar
-      const updatedProducts = products.filter((product) => product.id !== id);
-      setProducts(updatedProducts);
-    } catch (error) {
-      console.error("Error deleting product:", error);
-      // Manejar el error: mostrar un mensaje de error o hacer algo adecuado
-    }
+  // Función para manejar la búsqueda
+  const buscar = () => {
+    // Filtrar productos por nombre según el término de búsqueda
+    const resultados = products.filter(product =>
+      product.name.toLowerCase().includes(filtro.toLowerCase())
+    );
+    setProducts(resultados); // Actualizar lista de productos filtrados
   };
 
   return (
     <div className="product-list">
-      {/*  */}
-      <h2>productos </h2>
+      <h2>Productos</h2>
+      <Filtro filtro={filtro} setFiltro={setFiltro} buscar={buscar} /> {/* Renderiza el componente de filtro */}
       <div className="card-container">
         {products.map((product) => (
           <div key={product.id} className="card">
@@ -47,12 +46,6 @@ function ProductList() {
               <h5 className="card-title">{product.name}</h5>
               <p className="card-text">{product.description}</p>
               <p className="card-price">${product.price}</p>
-              <button    
-                className="btn btn-danger"
-                onClick={() => handleDelete(product.id)}
-              >
-                Eliminar
-              </button>
             </div>
           </div>
         ))}

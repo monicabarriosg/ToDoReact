@@ -27,7 +27,7 @@ function Formulariologin() {
   }, []);
   const getdatos = (e) => {
     e.preventDefault();
-    if (user !== "" && contrasena !== "") {
+    if (user !== "" || contrasena !== "") {
       let found = false;
       datos.forEach(dato => {
         if (dato.nombre === user && dato.contrasena === contrasena) {
@@ -37,7 +37,9 @@ function Formulariologin() {
       setUserFound(found);
       if (found) {
         Swal.fire("Usuario logueado")//AQUI HAY UN SWEET ALERT
-        localStorage.setItem("token","clave")//LO UTILICE PARA VALIDAR QUE EXISTA UN TOKEN Y QUE ASI SE EJECUTE LA PAGINA PRIVADA
+        localStorage.setItem("token","clave")
+        //Llave para los usuarios 
+        //LO UTILICE PARA VALIDAR QUE EXISTA UN TOKEN Y QUE ASI SE EJECUTE LA PAGINA PRIVADA
         // alert("Usuario logueado");//AQUI HAY UN ALERT
         navigate('/home');
       } else {

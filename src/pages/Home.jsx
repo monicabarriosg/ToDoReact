@@ -54,6 +54,12 @@ function Home() {
           title="nueva coleccion"
         />
       </h1>
+
+
+     
+
+      <VerProductos />
+   
       <h1>
       {/* <PalabrasCarrusel items={items} /> */}
         {/* componente que tiene un video */}
@@ -81,7 +87,7 @@ function Home() {
       </h1>
     
       {/* <EliminaProducto /> */}
-      <VerProductos />
+  
       {/* <CrearProducto /> */}
 
       {/* <Mostrar /> */}
