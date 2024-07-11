@@ -1,6 +1,9 @@
+// este componente es para que el usuario pueda comprar un producto de la tienda 
+
 import { useState } from 'react';
 import "../css/Product.css"
 import axios from 'axios'; 
+import Swal from 'sweetalert2';
 
 const CreatePedido = () => {
   const [pedidoData, setPedidoData] = useState({
@@ -8,7 +11,6 @@ const CreatePedido = () => {
     cantidad: 1,
     cliente: '',
     direccionEnvio: '',
- 
   });
 
   const handleChange = (e) => {
@@ -21,10 +23,12 @@ const CreatePedido = () => {
     try {
       const response = await axios.post("http://localhost:3001/user", pedidoData);
       console.log('Pedido creado:', response.data);
-      alert("siii")
+      Swal.fire("siii")//AQUI HAY UN SWEET ALERT
+      // alert("siii")//AQUI HAY UN ALERT
     } catch (error) {
       console.error('Error al crear pedido:', error);
-     alert("nooo")
+      Swal.fire("nooo")//AQUI HAY UN SWEET ALERT
+    //  alert("nooo")//AQUI HAY UN ALERT
     }
   };
 

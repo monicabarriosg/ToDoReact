@@ -7,16 +7,25 @@ import Navbar from "../components/Navbar";
 import Contact from "../components/contact";
 import Admi from "../pages/Admi";
 import PreguntaFrecuente from "../components/preguntaFrecuente";
+import { Modal } from "bootstrap";
+import PaginaNoEncontrada from "../pages/PaginaNoEncontrada";
+import PaginaPrivada from "../components/PaginaPrivada";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<PaginaPrivada>
+            <Navbar />
+            <Home/>
+          </PaginaPrivada>}/>
+        <Route path="/*" element={<PaginaNoEncontrada />} />
         <Route path="/register" element={<PaggRegister />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/modal" element={<Modal/>}/>
         <Route path="/PreguntaFrecuente" element={<PreguntaFrecuente />} />
         <Route path="/Admi" element={<Admi />} />
       </Routes>
@@ -25,27 +34,3 @@ function App() {
 }
 
 export default App;
-
-// // rutas de toda la pagina
-// import { Routes,Route } from "react-router-dom";
-// import Register from "../pages/PaggRegister";
-// import Login from "../pages/Login";
-// import Home from "../pages/Home"
-// import PreguntaFrecuente from "../components/preguntaFrecuente";
-// import Admi from '../pages/Admi'
-
-// function routing() {
-//   return (
-//     <div>
-//             <Routes>
-//                <Route path="/Admi" element={<Admi/>} />
-//                 <Route path='/register' element={<Register />} />
-//                 <Route path='/login' element={<Login />} />
-//                 <Route path='/' element={<Home/>} />
-//                 <Route path='/PreguntaFrecuente' element={<PreguntaFrecuente/>} />
-
-//             </Routes>
-//     </div>
-//   )
-// }
-// export default routing

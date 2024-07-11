@@ -1,3 +1,5 @@
+// este componete es para enlistar los pedidos que el usuario hizo a la pagina
+
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import EliminarPedido from './eliminarProducto';

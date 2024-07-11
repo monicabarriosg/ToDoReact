@@ -1,4 +1,5 @@
-// importacion de HOOCK 
+// este componente es para que el administrador pueda ver los productos subidos en la pagina 
+//y los pueda eliminar
 import { useState, useEffect } from 'react';
 // importacion del metodo GET y DELETE
 import { getData, deleteData } from '../use';

@@ -1,13 +1,13 @@
-import Mostrar from "../components/mostrar";
-import EliminaProducto from "../components/EliminaProducto";
+import Modal from "../components/Modal"
+// import PalabrasCarrusel from "../components/PalabrasCarrusel"
 import VerProductos from "../components/VerProductos";
-import CrearProducto from "../components/CrearProducto";
 
 import Footer from "../components/Footer";
 {
   /* importacion del componente que tiene el pie de pagina */
 }
 import Carrusel from "../components/Carrusel";
+
 {
   /* importacion del carrusel */
 }
@@ -19,7 +19,7 @@ import VideoCard from "../components/video";
 {
   /* importancion del componente que tiene videos*/
 }
-import CardHome from "../components/Cardhome";
+// import CardHome from "../components/Cardhome";
 {
   /* importacion del componente que contiene los cards de los productos */
 }
@@ -31,6 +31,7 @@ import CreatePedido from "../components/CreatePedido";
 {
   /* importacion del componente que tiene el POST */
 }
+// const items = ["Monica Wardrobe"]
 
 function Home() {
   return (
@@ -40,8 +41,21 @@ function Home() {
         {/* Componente que contiene el carrusel */}
         <Carrusel />
       </h1>
+<h1>
+<Modal/>
+</h1>
+
+
 
       <h1>
+        {/* componte que tiene un video */}
+        <VideoCard
+          videoUrl="https://static.bershka.net/4/photos2/2024/I/0/1/p/7592/167/600//03/7592167600_4_3_1.mp4?t=1720100422889"
+          title="nueva coleccion"
+        />
+      </h1>
+      <h1>
+      {/* <PalabrasCarrusel items={items} /> */}
         {/* componente que tiene un video */}
         <VideoCard
           videoUrl="https://static.bershka.net/4/photos2/2024/I/0/1/p/6250/033/251//01/6250033251_4_3_1.mp4?t=1718274273045"
@@ -50,7 +64,7 @@ function Home() {
         />
         <h1>
           {/* card sobre un producto */}
-          <CardHome />
+          {/* <CardHome /> */}
         </h1>
         {/* componte que tiene un video */}
         <VideoCard
@@ -65,16 +79,18 @@ function Home() {
           title="nueva coleccion"
         />
       </h1>
-      <EliminaProducto />
+    
+      {/* <EliminaProducto /> */}
       <VerProductos />
-      <CrearProducto />
+      {/* <CrearProducto /> */}
 
-      <Mostrar />
+      {/* <Mostrar /> */}
       <ListPedidos />
       <CreatePedido />
-      <subirProductos />
+      {/* <subirProductos /> */}
 
       <Footer />
+
     </div>
   );
 }

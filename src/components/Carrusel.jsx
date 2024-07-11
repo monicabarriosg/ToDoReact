@@ -14,7 +14,8 @@ function carrusel() {
           <img
             id="uno"
             className="d-block w-100 custom-img"
-            src="https://static.bershka.net/4/static/images/home/2024/slidesHTML/_sales-ss/assets/launch_first-stage_man_D.jpg?20240628101700"
+          
+            src="https://static.bershka.net/4/static/images/home/2024/slidesHTML/_sales-ss/assets/launch_second-stage_bskteen_D.jpg?20240710021707"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -64,6 +65,19 @@ function carrusel() {
             id="uno"
             className="d-block w-100 custom-img"
             src="https://media.gucci.com/content/HeroRegularStandard_1600x675/1717416106/HeroRegularStandard_Gucci-KIDS-FW24-May24-240327-LB11-133_001_Default.jpg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h5>HI STYLE</h5>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            id="uno"
+            className="d-block w-100 custom-img"
+            src="https://static.bershka.net/4/static/images/home/2024/slidesHTML/_sales-ss/assets/launch_first-stage_man_D.jpg?20240628101700"
             alt="First slide"
           />
           <Carousel.Caption>

@@ -169,29 +169,25 @@ const PreguntaFrecuente = () => {
             className="pregunta-item-toggle"
           />
           <label htmlFor="pregunta-item-6" className="pregunta-item-question">
-            Devoluciones
+              Donde estamos ubicados
           </label>
           <div className="pregunta-item-answer">
             <p>
-              Si la compra realizada no ha cumplido con tus expectativas, te
-              ofrecemos la posibilidad de hacer una devolución.
+            Estamos ubicados en Puntarenas, pero también operamos de manera virtual.
             </p>
             <ul>
               <li>
-                Debes gestionar la devolución dentro del plazo establecido:
-                Compra online: tienes 30 días desde la fecha de envío de tu
-                pedido. Compra en una tienda física: tienes 30 días desde la
-                fecha de compra.
+              <a
+              href="https://www.google.com/maps/place/Plaza+de+atesania,+Av.+4,+Provincia+de+Puntarenas,+Puntarenas/@9.9762761,-84.8333992,18z/data=!4m6!3m5!1s0x8fa02eeb6d3e3869:0xb92a31bf0815971e!8m2!3d9.9757091!4d-84.83211!16s%2Fg%2F11bvtbx9ml?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver en Google Maps
+            </a>
               </li>
-              <li>
-                Los artículos tienen que estar en su estado original y conservar
-                todas las etiquetas. Tienes que hacer la devolución en el mismo
-                mercado/región en el que has realizado la compra.
-              </li>
-            </ul>
-          </div>
+              </ul>
         </div>
-
+      </div>
         {/**/}
       </div>
     </div>

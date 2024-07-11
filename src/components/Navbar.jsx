@@ -1,4 +1,5 @@
-// este componente es la barra de navegacion para que el usario pueda
+// este componente es la barra de navegacion para que el usario pueda navegar entre la 
+// propia pagina
 import { Link } from "react-router-dom";
 import "../css/nav.css";
 
