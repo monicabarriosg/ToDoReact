@@ -1,32 +1,3 @@
 {
-  "user": [
-    {
-      "id": "6e86",
-      "name": "Camiseta manga corta boxy fit",
-      "price": "18",
-      "description": "Talla y altura modelo: P · 178 cm",
-      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/2364/443/251/c5f472b495b125c4f71b21527330435d-2364443251_2_11_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
-    },
-    {
-      "id": "6283",
-      "name": "Camiseta Hello Kitty & My Melody manga corta print",
-      "price": "44",
-      "description": "Talla y altura modelo: P · 178 cm",
-      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/6250/033/251//02/3e637df68033787ba993c2060b3d4b64-6250033251_2_7_0.jpg?imwidth=1080&impolicy=bershka-itxmedium"
-    },
-    {
-      "id": "6a4d",
-      "name": "Camiseta manga corta boxy fit",
-      "price": "9",
-      "description": "Talla y altura modelo: P · 175 cm",
-      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/7804/033/251/5f79f0b3f1c668bd79d0b0d4cdb7397f-7804033251_2_7_0.jpg?imwidth=750&impolicy=bershka-itxmedium"
-    },
-    {
-      "id": "37f7",
-      "name": "Bermuda denim",
-      "price": "50",
-      "description": "Talla y altura modelo: P · 178 cm",
-      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/3190/534/428/e31fb28e17b597d267047ebc3f33ebb1-3190534428_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
-    }
-  ]
+  "user": []
 }
