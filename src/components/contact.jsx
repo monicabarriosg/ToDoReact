@@ -1,5 +1,7 @@
 // este componente es un formulario donde el usuario puede dejar quejas, dudas o cualquier mensaje que desee
 // importacion del useState
+
+
 import { useState } from "react";
 // importacion de la hoja de estilos
 import "../css/ContactForm.css";

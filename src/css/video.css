@@ -1,8 +1,8 @@
 /* estilos para los videos de la pagina de home */
 .card-video{
 justify-content: center;
-width: 400px; /* Ancho deseado para el contenedor del video */
-margin: 20px; /* Margen exterior para separar los videos */
+width: 400px; 
+margin: 20px;
 margin-left: 400px;
 
 }

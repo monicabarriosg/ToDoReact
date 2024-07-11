@@ -1,7 +1,10 @@
+// este componente es para la creacion del login
+
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../css/login.css"
+import Swal from "sweetalert2";
 
 
 function Formulariologin() {
@@ -14,9 +17,11 @@ function Formulariologin() {
     axios.get("http://localhost:3001/user")
       .then(response => {
         setDatos(response.data);
+        // Swal.fire("Usuario registrado")//AQUI HAY UN SWEET ALERT
         console.log("Usuarios registrados", response.data);
       })
       .catch(error => {
+        // Swal.fire("Hubo un error al obtener los datos")//AQUI HAY UN SWEET ALERT
         console.error("Hubo un error al obtener los datos", error);
       });
   }, []);
@@ -31,13 +36,18 @@ function Formulariologin() {
       });
       setUserFound(found);
       if (found) {
-        alert("Usuario logueado");
+        Swal.fire("Usuario logueado")//AQUI HAY UN SWEET ALERT
+        localStorage.setItem("token","clave")//LO UTILICE PARA VALIDAR QUE EXISTA UN TOKEN Y QUE ASI SE EJECUTE LA PAGINA PRIVADA
+        // alert("Usuario logueado");//AQUI HAY UN ALERT
         navigate('/home');
       } else {
-        alert("Usuario o contraseña incorrectos");
+        Swal.fire("Usuario o contraseña incorrectos")//AQUI HAY UN SWEET ALERT
+        // alert("Usuario o contraseña incorrectos");//AQUI HAY UN ALERT
       }
     }
   };
+
+
   return (
     <div className="container">
       <h1>Crear cuenta</h1>

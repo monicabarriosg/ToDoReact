@@ -1,10 +1,12 @@
-import CrearRopa from "../components/CrearRopa"
+import CrearProducto from "../components/CrearProducto"
+import EliminaProducto from "../components/EliminaProducto";
 
 function Admi() {
   return (
     <div>
     <div>Admi</div>
-    <CrearRopa/>
+    <CrearProducto/>
+    <EliminaProducto/>
     </div>
   )
 }

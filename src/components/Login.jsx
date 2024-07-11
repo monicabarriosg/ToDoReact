@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 // funcion para declarar los cambios en las variables 
 function Formulariologin() {
   const [user, setUser] = useState("");
@@ -15,9 +16,11 @@ function Formulariologin() {
     axios.get("http://localhost:3001/user")
       .then(response => {
         setDatos(response.data);
+        Swal.fire("Usuarios registrados")//AQUI HAY UN SWEET ALERT
         console.log("Usuarios registrados", response.data);
       })
       .catch(error => {
+        Swal.fire("Hubo un error al obtener los datos")//AQUI HAY UN SWEET ALERT
         console.error("Hubo un error al obtener los datos", error);
       });
   }, []);
@@ -32,17 +35,20 @@ function Formulariologin() {
       });
       setUserFound(found);
       if (found) {
-        alert("Usuario logueado");
+        Swal.fire("Usuario logueado")//AQUI HAY UN SWEET ALERT
+        // alert("Usuario logueado");//AQUI HAY UN ALERT
+        localStorage.setItem("token","clave")
         navigate('/home');
       } else {
-        alert("Usuario o contraseña incorrectos");
+        Swal.fire("Usuario o contraseña incorrectos")//AQUI HAY UN SWEET ALERT
+        // alert("Usuario o contraseña incorrectos");//AQUI HAY UN ALERT
       }
     }
   };
   return (
     <div>
       <h1>Login</h1>
-      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)}/>
+      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)} required/>
       <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)}/>
       <button id='boton' onClick={getdatos}>Login</button>
       <button id='boton'>
