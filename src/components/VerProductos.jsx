@@ -2,11 +2,12 @@
 import { useState, useEffect } from "react";
 import { getData } from "../use";
 import "../css/ProductosCards.css";
-import Filtro from "../components/Filtro"; // Importa el componente de filtro
+import Filtro from "../components/Filtro"; 
 
 function ProductList() {
   const [products, setProducts] = useState([]);
-  const [filtro, setFiltro] = useState(""); // Estado para el término de búsqueda
+  const [filtro, setFiltro] = useState(""); 
+  // Estado para el término de búsqueda
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -25,6 +26,7 @@ function ProductList() {
   const buscar = () => {
     // Filtrar productos por nombre según el término de búsqueda
     const resultados = products.filter(product =>
+      // convierte una cadena de texto a minúsculas.
       product.name.toLowerCase().includes(filtro.toLowerCase())
     );
     setProducts(resultados); // Actualizar lista de productos filtrados
