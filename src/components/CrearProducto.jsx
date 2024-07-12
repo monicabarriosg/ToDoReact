@@ -1,17 +1,16 @@
-// este componente es para la pagina privada donde el sueño de la pagina puede 
-//subir los datos que desea ver en us pagina 
-
-
-import { useState } from "react";
-// importacion de la funcion fetchData para
+// Este componente es para la pagina privada donde el sueño de la pagina puede
+// Subir los datos que desea ver en us pagina
+import { useState } from "react"; // Importación del hook useState de React
+// Importacion de la funcion fetchData para manejar las peticiones
 import { fetchData } from "../use";
-import "../css/CrearProducto.css"
+import "../css/CrearProducto.css"; // Importacion de la hoja de estilos
+//  
 function AddProduct() {
   const [product, setProduct] = useState({
-    name: "",
-    price: 0,
-    description: "",
-    imageUrl: "",
+    name: "",        // Almacena el nombre del producto
+    price: 0,        //Almacena el dato del precio
+    description: "", //Almacena la descripción del producto
+    imageUrl: "",    // Almacena la URL de la imagen del producto
   });
 
   const handleInputChange = (e) => {
@@ -80,7 +79,9 @@ function AddProduct() {
           />
         </label>
         <br />
-        <button type="submit" className="btn-addProduct">Add Product</button>
+        <button type="submit" className="btn-addProduct">
+          Add Product
+        </button>
       </form>
     </div>
   );

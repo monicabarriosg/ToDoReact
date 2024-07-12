@@ -1,5 +1,4 @@
 // este componente es para la creacion del login
-
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -17,7 +16,7 @@ function Formulariologin() {
     axios.get("http://localhost:3001/user")
       .then(response => {
         setDatos(response.data);
-        // Swal.fire("Usuario registrado")//AQUI HAY UN SWEET ALERT
+    
         console.log("Usuarios registrados", response.data);
       })
       .catch(error => {
@@ -53,8 +52,8 @@ function Formulariologin() {
   return (
     <div className="container">
       <h1>Crear cuenta</h1>
-      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)} className="myInput"/>
-      <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)} className="myInput"/>
+      <input id='user'name="myInput"placeholder='Ingrese nombre'value={user} onChange={e => setUser(e.target.value)} className="myInput" required/>
+      <input id='contrasena'name="myInput"placeholder='Ingrese contraseña'type="password"value={contrasena}onChange={e => setContrasena(e.target.value)} className="myInput" required/>
       <button id='boton' onClick={getdatos} className="button">Login</button>
       <button id='boton' className="button ">
         <Link to='/register'>Ir a Register</Link>

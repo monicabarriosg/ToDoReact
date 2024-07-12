@@ -1,3 +1,25 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "03f5",
+      "name": "Cazadora denim cropped",
+      "price": 0,
+      "description": "Talla y altura modelo: P · 170 cm",
+      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/1693/335/800/e30feeac0e776d43d0a40b5b74bab88f-1693335800_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
+    },
+    {
+      "id": "8ce7",
+      "name": "mezcla de estilo",
+      "price": "15",
+      "description": "Talla y altura modelo: P · 178 cm",
+      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/1270/777/706//03/a676f90f2599e56341c3b3e8c1287fc4-1270777706_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
+    },
+    {
+      "id": "e8cb",
+      "name": "mezcla de estilo",
+      "price": "15",
+      "description": "Talla y altura modelo: P · 178 cm",
+      "imageUrl": "https://static.bershka.net/4/photos2/2024/I/0/1/p/1270/777/706//03/a676f90f2599e56341c3b3e8c1287fc4-1270777706_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
+    }
+  ]
 }

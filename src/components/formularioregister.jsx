@@ -6,9 +6,11 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-
+// useState: Para manejar el estado del formulario.
+//useNavigate: Para la navegación entre rutas en la aplicación.
 function FormularioRegistro() {
   const [user, setUser] = useState("");
+  // setUser se utiliza para actualizar el estado de user.
   const [contrasena, setContrasena] = useState("");
   const Navigate = useNavigate()
 
